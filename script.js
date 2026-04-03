@@ -1,33 +1,47 @@
 /**
- * Toggles the display of an individual team member's bio
- * @param {string} bioId - The ID of the bio section to show or hide
+ * Opens the modal and injects the specific bio text
  */
-function toggleBio(bioId) {
-    const bio = document.getElementById(bioId);
-    // Toggle between showing and hiding the bio section
-    if (bio.style.display === "none" || bio.style.display === "") {
-        bio.style.display = "block";
-    } else {
-        bio.style.display = "none";
-    }
+function openBio(bioText) {
+    const modal = document.getElementById("bioModal");
+    const modalText = document.getElementById("modalText");
+    
+    modalText.innerText = bioText;
+    modal.style.display = "flex";
 }
 
 /**
- * Shows the specified section ('bios' or 'vision') and hides the other
- * @param {string} sectionId - The ID of the section to display
+ * Closes the modal popup
+ */
+function closeBio() {
+    document.getElementById("bioModal").style.display = "none";
+}
+
+/**
+ * Switches sections and re-triggers the fade-in animation
  */
 function showSection(sectionId) {
     const biosSection = document.getElementById("bios");
     const visionSection = document.getElementById("vision");
+    const body = document.body;
 
-    // Display the bios section and hide the vision section
+    // Reset animation by removing and re-adding the class
+    body.classList.remove("fade-in");
+    void body.offsetWidth; // Trigger reflow to restart animation
+    body.classList.add("fade-in");
+
     if (sectionId === "bios") {
-        biosSection.style.display = "flex";
+        biosSection.style.display = "grid"; // Keep the 2x2 grid display
         visionSection.style.display = "none";
-    }
-    // Display the vision section and hide the bios section
-    else if (sectionId === "vision") {
+    } else {
         biosSection.style.display = "none";
         visionSection.style.display = "block";
+    }
+}
+
+// Close modal if user clicks outside the content box
+window.onclick = function(event) {
+    const modal = document.getElementById("bioModal");
+    if (event.target == modal) {
+        closeBio();
     }
 }

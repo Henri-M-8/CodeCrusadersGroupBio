@@ -1,90 +1,144 @@
-/* General page styling */
+/* Custom Variables for Vibrancy */
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --accent-color: #f43f5e; /* Vibrant Coral */
+    --secondary-accent: #06b6d4; /* Bright Cyan */
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-/* Header section styling */
+/* Fade-in from top animation */
+.fade-in {
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    padding: 40px 0;
     text-align: center;
+    border-bottom: 3px solid var(--accent-color);
 }
 
-/* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
-    margin-top: 10px;
+    width: 120px;
+    filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.5));
 }
 
-/* Menu button styling */
-header nav {
-    margin-top: 10px;
-}
+nav { margin-top: 20px; }
 
 header nav button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 5px;
+    background: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--secondary-accent);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
 }
 
 header nav button:hover {
-    background: #0056b3;
-}
-
-/* Flex container for team bios and vision sections */
-.container {
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-/* Card styling for individual team bios */
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    flex: 1 1 calc(30% - 40px);
-    text-align: center;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-h2 {
-    margin: 0 0 10px;
-}
-
-/* Initially hide bio details */
-.bio {
-    display: none;
-    margin-top: 10px;
-    color: #555;
-}
-
-/* Button styling */
-button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    background: var(--secondary-accent);
+    color: var(--bg-color);
     cursor: pointer;
 }
 
-button:hover {
-    background: #0056b3;
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* 2x2 Grid Layout */
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-top: 5px solid var(--accent-color);
+}
+
+.role {
+    color: var(--secondary-accent);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.vision-box {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+button:hover { transform: translateY(-3px); }
+
+/* Modal Styling */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    border: 2px solid var(--secondary-accent);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--text-dim);
 }
