@@ -1,24 +1,4 @@
 /**
- * Opens the modal and injects the specific bio text
- */
-function openBio(bioText) {
-    const modal = document.getElementById("bioModal");
-    const modalText = document.getElementById("modalText");
-
-    modalText.innerText = bioText;
-    modal.style.display = "flex";
-}
-
-/**
- * Closes the modal popup
- */
-
-function closeBio() {
-    document.getElementById("bioModal").style.display = "none";
-    document.body.style.overflow = ""; 
-}
-
-/**
  * Switches sections and re-triggers the fade-in animation
  */
 function showSection(sectionId) {
@@ -111,38 +91,53 @@ const moodboards = {
     </div>
   `,
 
-    henri: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Henri Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">React</div></div></div></div>`,
-    leo: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Leo Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">APIs</div></div></div></div>`,
+    henri: 
+    `<div class="mb-root">
+            <div class="mb-header">
+            <div class="mb-title">Henri's Moodboard<span class="mb-cursor"></span></div>
+            <div class="mb-subtitle"># inspirations in computer science — tools · concepts · figures</div>
+          </div>
+        </div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">6 7</div></div></div></div>`,
+    
+        leo: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Leo Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">APIs</div></div></div></div>`,
     kaitlyn: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Kaitlyn Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">SQL</div></div></div></div>`
 };
 
 
-/**
- * Opens the moodboard and ensures it centers correctly
- */
+function openBio(bioText) {
+    const modal = document.getElementById("bioModal");
+    const modalText = document.getElementById("modalText");
+
+    modalText.innerText = bioText;
+    modal.style.display = "flex"; // Must be flex
+    document.body.style.overflow = "hidden"; // Stop background scroll
+}
+
 function openMoodboard(person) {
     const modal = document.getElementById("moodboardModal");
     const content = document.getElementById("moodboardContent");
 
-    // We use 'kate' to match the onclick="openMoodboard('kate')" in index.html
+    // Ensure the key matches 'kate' or 'bill' etc.
     content.innerHTML = moodboards[person] || "<p>No moodboard yet.</p>";
     
-    modal.style.display = "flex"; // Must be flex for CSS centering to work
+    modal.style.display = "flex"; // Must be flex
     document.body.style.overflow = "hidden";
+}
+
+function closeBio() {
+    document.getElementById("bioModal").style.display = "none";
+    document.body.style.overflow = "auto";
 }
 
 function closeMoodboard() {
     document.getElementById("moodboardModal").style.display = "none";
-    document.body.style.overflow = "";
+    document.body.style.overflow = "auto";
 }
 
-// Ensure clicking outside the box also closes it
+// Updated click-outside logic
 window.onclick = function(event) {
-    const bioModal = document.getElementById("bioModal");
-    const moodboardModal = document.getElementById("moodboardModal");
-    if (event.target == bioModal) {
+    if (event.target.classList.contains('modal-overlay')) {
         closeBio();
-    } else if (event.target == moodboardModal) {
         closeMoodboard();
     }
 }

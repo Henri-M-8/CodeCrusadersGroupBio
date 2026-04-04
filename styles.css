@@ -188,6 +188,22 @@ button:hover { transform: translateY(-3px); }
     max-height: 85vh;
     overflow-y: auto;
     margin: auto; 
+
+    max-height: 80vh; /* Limits height to 80% of screen */
+    overflow-y: scroll;
+}
+
+/* Custom Scrollbar Styling for both Bio and Moodboard */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--secondary-accent);
+    border-radius: 10px;
 }
 
 #moodboardModal .modal-content {
