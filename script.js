@@ -107,37 +107,37 @@ const moodboards = {
 function openBio(bioText) {
     const modal = document.getElementById("bioModal");
     const modalText = document.getElementById("modalText");
-
     modalText.innerText = bioText;
-    modal.style.display = "flex"; // Must be flex
-    document.body.style.overflow = "hidden"; // Stop background scroll
+    
+    modal.style.display = "flex"; 
+    // This stops the main website from scrolling under the modal
+    document.body.style.overflow = "hidden"; 
 }
 
 function openMoodboard(person) {
     const modal = document.getElementById("moodboardModal");
     const content = document.getElementById("moodboardContent");
-
-    // Ensure the key matches 'kate' or 'bill' etc.
-    content.innerHTML = moodboards[person] || "<p>No moodboard yet.</p>";
     
-    modal.style.display = "flex"; // Must be flex
+    content.innerHTML = moodboards[person] || "<p>Loading...</p>";
+    
+    modal.style.display = "flex"; 
     document.body.style.overflow = "hidden";
 }
 
 function closeBio() {
     document.getElementById("bioModal").style.display = "none";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "auto"; // Restore main page scroll
 }
 
 function closeMoodboard() {
     document.getElementById("moodboardModal").style.display = "none";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "auto"; // Restore main page scroll
 }
 
-// Updated click-outside logic
+// Updated window click to check for the overlay
 window.onclick = function(event) {
     if (event.target.classList.contains('modal-overlay')) {
         closeBio();
         closeMoodboard();
     }
-}
+};
