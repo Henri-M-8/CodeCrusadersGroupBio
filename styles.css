@@ -85,6 +85,19 @@ header nav button:hover {
     border-top: 5px solid var(--accent-color);
 }
 
+.card h2 {
+    margin-top: 0;
+}
+
+.bio-pics {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid black;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
 .role {
     color: var(--secondary-accent);
     font-weight: 600;
