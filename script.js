@@ -12,8 +12,10 @@ function openBio(bioText) {
 /**
  * Closes the modal popup
  */
+
 function closeBio() {
     document.getElementById("bioModal").style.display = "none";
+    document.body.style.overflow = ""; 
 }
 
 /**
@@ -115,22 +117,26 @@ const moodboards = {
 };
 
 
+/**
+ * Opens the moodboard and ensures it centers correctly
+ */
 function openMoodboard(person) {
     const modal = document.getElementById("moodboardModal");
     const content = document.getElementById("moodboardContent");
 
+    // We use 'kate' to match the onclick="openMoodboard('kate')" in index.html
     content.innerHTML = moodboards[person] || "<p>No moodboard yet.</p>";
-    modal.style.display = "flex";
+    
+    modal.style.display = "flex"; // Must be flex for CSS centering to work
     document.body.style.overflow = "hidden";
 }
-
 
 function closeMoodboard() {
     document.getElementById("moodboardModal").style.display = "none";
     document.body.style.overflow = "";
 }
 
-// Close modal if user clicks outside the content box
+// Ensure clicking outside the box also closes it
 window.onclick = function(event) {
     const bioModal = document.getElementById("bioModal");
     const moodboardModal = document.getElementById("moodboardModal");

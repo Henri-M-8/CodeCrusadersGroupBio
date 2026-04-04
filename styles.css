@@ -34,10 +34,32 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
-    padding: 40px 0;
+    position: relative;
+    padding: 60px 0;
     text-align: center;
     border-bottom: 3px solid var(--accent-color);
+    overflow: hidden;
+    /* Base vibrant gradient */
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+}
+
+/* Blurred background using the team logo */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('img/TheCodeCrusaders.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) brightness(0.4); /* Blur and darken for readability */
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+}
+
+header h1, header img, header nav {
+    position: relative;
+    z-index: 2;
 }
 
 .team-logo {
@@ -134,16 +156,20 @@ button:hover { transform: translateY(-3px); }
 
 /* Modal Styling */
 .modal-overlay {
-    display: none;
+    display: none; 
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100vh;
-    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.9);
     z-index: 1000;
+    
+    /* Perfect centering logic */
     justify-content: center;
-    align-items: flex-start;
-    overflow-y: auto;
-    padding: 40px 0;
+    align-items: center; 
+    
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -151,23 +177,30 @@ button:hover { transform: translateY(-3px); }
     background: var(--card-bg);
     padding: 40px;
     border-radius: 20px;
-    max-width: 400px;
-    width: 90%;
+    max-width: 450px;
+    width: 100%;
     position: relative;
     border: 2px solid var(--secondary-accent);
     text-align: center;
-    margin: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    
+    /* Responsive height for smaller windows */
+    max-height: 85vh;
+    overflow-y: auto;
+    margin: auto; 
 }
 
 #moodboardModal .modal-content {
-    max-width: 780px;
+    max-width: 850px;
     text-align: left;
 }
 
 .close-btn {
     position: absolute;
-    top: 15px; right: 20px;
+    top: 15px; 
+    right: 20px;
     font-size: 30px;
     cursor: pointer;
     color: var(--text-dim);
+    z-index: 10;
 }
