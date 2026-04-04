@@ -123,6 +123,13 @@ button {
     transition: transform 0.2s;
 }
 
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
 button:hover { transform: translateY(-3px); }
 
 /* Modal Styling */

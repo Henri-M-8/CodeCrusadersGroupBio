@@ -26,25 +26,36 @@
         <div class="card">
             <h2>Henri Murthy</h2>
             <p class="role">Front-end developer</p>
-            <button onclick="openBio('Henri is a master of CSS and React, ensuring every pixel is perfectly placed for the user experience.')">Show Bio</button>
+            <div class="button-row">
+                <button onclick="openBio('Henri is a master of CSS and React, ensuring every pixel is perfectly placed for the user experience.')">Show Bio</button>
+                <button onclick="openMoodboard('henri')">Show Moodboard</button>
+            </div>
         </div>
         <div class="card">
             <h2>Leo Cardenas</h2>
             <p class="role">Back-end developer</p>
-            <button onclick="openBio('Leo handles the heavy lifting on the server-side, optimizing API calls and system architecture.')">Show Bio</button>
+            <div class="button-row">
+                <button onclick="openBio('Leo handles the heavy lifting on the server-side, optimizing API calls and system architecture.')">Show Bio</button>
+                <button onclick="openMoodboard('leo')">Show Moodboard</button>
+            </div>
         </div>
         <div class="card">
-            <img src="img/cas.png" style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;">
+            <img src="img/cas.png" alt="Bill picture" class="bio-pics">
             <h2>Bill Xiang</h2>
             <p class="role">Back-end developer</p>
-            <p class="bio-description">Bill is a passionate back-end developer with a keen interest in system architecture and performance optimization.</p>
-            <button onclick="openMoodboard()">Show Moodboard</button>
+            <div class="button-row">
+                <button onclick="openBio('Bill is a passionate back-end developer with a keen interest in system architecture and performance optimization.')">Show Bio</button>
+                <button onclick="openMoodboard('bill')">Show Moodboard</button>
+            </div>
         </div>
         <div class="card">
-             <img src="img/kate.jpg" alt="Kaitlyn Brunhaver picture" class="bio-pics">
+             <img src="img/kate.jpg" alt="Kaitlyn picture" class="bio-pics">
             <h2>Kaitlyn Brunhaver</h2>
             <p class="role">Database Design</p>
-            <button onclick="openBio('Kaitlyn architects complex schemas and ensures data integrity across all Crusaders platforms.')">Show Bio</button>
+            <div class="button-row">
+                <button onclick="openBio('Kaitlyn architects complex schemas and ensures data integrity across all Crusaders platforms.')">Show Bio</button>
+                <button onclick="openMoodboard('kate')">Show Moodboard</button>
+            </div>
         </div>
     </div>
 
