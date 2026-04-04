@@ -4,7 +4,7 @@
 function openBio(bioText) {
     const modal = document.getElementById("bioModal");
     const modalText = document.getElementById("modalText");
-    
+
     modalText.innerText = bioText;
     modal.style.display = "flex";
 }
@@ -38,10 +38,23 @@ function showSection(sectionId) {
     }
 }
 
+function openMoodboard() {
+    document.getElementById("moodboardModal").style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeMoodboard() {
+    document.getElementById("moodboardModal").style.display = "none";
+    document.body.style.overflow = "";
+}
+
 // Close modal if user clicks outside the content box
 window.onclick = function(event) {
-    const modal = document.getElementById("bioModal");
-    if (event.target == modal) {
+    const bioModal = document.getElementById("bioModal");
+    const moodboardModal = document.getElementById("moodboardModal");
+    if (event.target == bioModal) {
         closeBio();
+    } else if (event.target == moodboardModal) {
+        closeMoodboard();
     }
 }

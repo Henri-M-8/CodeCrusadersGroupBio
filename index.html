@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="moodboard.css">
 </head>
 <body class="fade-in">
 
@@ -33,9 +34,11 @@
             <button onclick="openBio('Leo handles the heavy lifting on the server-side, optimizing API calls and system architecture.')">Show Bio</button>
         </div>
         <div class="card">
+            <img src="img/cas.png" style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;">
             <h2>Bill Xiang</h2>
             <p class="role">Back-end developer</p>
-            <button onclick="openBio('Bill specializes in Node.js and security protocols, keeping the Code Crusaders infrastructure safe and fast.')">Show Bio</button>
+            <p class="bio-description">Bill is a passionate back-end developer with a keen interest in system architecture and performance optimization.</p>
+            <button onclick="openMoodboard()">Show Moodboard</button>
         </div>
         <div class="card">
             <h2>Kaitlyn Brunhaver</h2>
@@ -48,6 +51,15 @@
         <div class="vision-box">
             <h2>Our Mission Statement</h2>
             <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+
+            <h2>Team Rules</h2>
+            <ul style="text-align: left;">
+                <li><strong>Commitment:</strong> The team will commit to achieving its stated goals and will handle falling behind schedule principally by preventing such occurrences by holding a sync-up meeting to verify the progress and evaluate if a high-quality “Done” increment was delivered that particular week, and adjust and adapt accordingly.</li>
+                <li><strong>Courage:</strong> We will agree to do the right thing, especially when tackling tough problems, act according to our judgment, and not be afraid to challenge the status quo if we deem it fruitful towards achieving our objectives. This includes trying things outside of traditional methods.</li>
+                <li><strong>Focus:</strong> We will concentrate on the work discussed and agreed upon during the sync-up every week, and not get distracted and add on work that has not been agreed upon.</li>
+                <li><strong>Openness:</strong> We will agree and encourage each other to foster transparency about the work we are doing with each other. This will also facilitate dealing with an uncooperative team member when we have as much information as possible to work with, and to show them the goodwill in each of our concerted efforts to improve the product.</li>
+                <li><strong>Respect:</strong> We recognize each team member as capable and independent, and afford a degree of autonomy to everyone by valuing different expertises and perspectives. It is very important to answer other group members' questions and not take it as a sign that they are not capable.</li>
+            </ul>
         </div>
     </div>
 </main>
@@ -57,6 +69,78 @@
         <span class="close-btn" onclick="closeBio()">&times;</span>
         <h3>Team Member Bio</h3>
         <p id="modalText"></p>
+    </div>
+</div>
+
+<div id="moodboardModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeMoodboard()">&times;</span>
+        <div class="mb-root">
+          <div class="mb-header">
+            <div class="mb-title">BILLboard<span class="mb-cursor"></span></div>
+            <div class="mb-subtitle"># inspirations in computer science — tools · concepts · figures</div>
+          </div>
+          <div class="mb-grid">
+            <!-- Linus Torvalds -->
+            <div class="mb-card">
+              <span class="mb-card-tag tag-figure">figure</span>
+              <div class="mb-ascii">  ,----,
+ /  o o \
+|  (___) |
+ \  ---  /</div>
+              <div class="mb-card-title">Linus Torvalds</div>
+              <div class="mb-card-desc">Creator of Linux & Git. Proof that a side project can run the world.</div>
+              <div class="mb-quote">"Talk is cheap. Show me the code."</div>
+            </div>
+            <!-- Unix Philosophy -->
+            <div class="mb-card span2">
+              <span class="mb-card-tag tag-concept">concept</span>
+              <div class="mb-card-title">Unix Philosophy</div>
+              <div class="mb-card-desc">The original microservices manifesto, written in 1978.</div>
+              <div class="mb-code-block">$ cat philosophy.txt
+> Do one thing and do it well.
+> Write programs that work together.
+> Write programs to handle text streams,
+  because that is a universal interface.</div>
+              <div class="mb-pill-row">
+                <span class="mb-pill">pipes</span>
+                <span class="mb-pill">stdin/stdout</span>
+                <span class="mb-pill">composability</span>
+                <span class="mb-pill">simplicity</span>
+              </div>
+            </div>
+            <!-- Vim -->
+            <div class="mb-card">
+              <span class="mb-card-tag tag-tool">tool</span>
+              <span class="mb-icon">⌨</span>
+              <div class="mb-card-title">Vim</div>
+              <div class="mb-card-desc">Modal editor. Once you stop trying to exit, everything changes.</div>
+              <div class="mb-code-block">:wq<span class="blink">_</span></div>
+              <a class="mb-card-link" href="https://www.vim.org" target="_blank">vim.org →</a>
+            </div>
+            <!-- Git -->
+            <div class="mb-card">
+              <span class="mb-card-tag tag-tool">tool</span>
+              <span class="mb-icon">⎇</span>
+              <div class="mb-card-title">Git</div>
+              <div class="mb-card-desc">Distributed version control. The backbone of collaborative software.</div>
+              <a class="mb-card-link" href="https://git-scm.com/doc" target="_blank">git-scm.com/doc →</a>
+              <div class="mb-pill-row">
+                <span class="mb-pill">commit</span>
+                <span class="mb-pill">branch</span>
+                <span class="mb-pill">merge</span>
+                <span class="mb-pill">rebase</span>
+              </div>
+            </div>
+            <!-- Donald Knuth -->
+            <div class="mb-card">
+              <span class="mb-card-tag tag-figure">figure</span>
+              <div class="mb-card-title">Donald Knuth</div>
+              <div class="mb-card-desc">The Art of Computer Programming. TeX. The father of algorithm analysis.</div>
+              <div class="mb-quote">"Beware of bugs in the above code; I have only proved it correct, not tried it."</div>
+            </div>
+          </div>
+        </div>
     </div>
 </div>
 
