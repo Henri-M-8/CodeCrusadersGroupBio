@@ -97,9 +97,84 @@ const moodboards = {
             <div class="mb-title">Henri's Moodboard<span class="mb-cursor"></span></div>
             <div class="mb-subtitle"># inspirations in computer science — tools · concepts · figures</div>
           </div>
-        </div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">6 7</div></div></div></div>`,
+        </div>
+        <div class="mb-grid">
+            <div class="mb-card">
+                <div class="mb-card-title">John Carmack</div>
+                <span class="mb-card-tag tag-figure">figure</span>
+                <div class="mb-card-desc">CTO of Oculus VR and creator of id Tech. Pushed the limits of real-time 3D graphics.</div>
+                <div class="mb-quote">"Focus is a matter of deciding what things you're not going to do."</div>
+                <div class="mb-pill-row">
+                    <span class="mb-pill">Quake engine</span>
+                    <span class="mb-pill">Doom engine</span>
+                    <span class="mb-pill">Fast inverse square root</span>
+                </div>
+            </div>
+            <div class="mb-card">
+                <div class="mb-card-title">Machine Learning</div>
+                <span class="mb-card-tag tag-concept">concept</span>
+                <div class="mb-card-desc">The field of teaching machines to learn patterns from data. Revolutionizing AI.</div>
+                    <div class="mb-code-block">
+                        model.fit(X_train, y_train)
+                        predictions = model.predict(X_test)
+                    </div>
+                <div class="mb-pill-row">
+                    <span class="mb-pill">Supervised Learning</span>
+                    <span class="mb-pill">Unsupervised Learning</span>
+                    <span class="mb-pill">Neural Networks</span>
+                </div>
+            </div>
+            <div class="mb-card">
+                <div class="mb-card-title">pandas</div>
+                <span class="mb-card-tag tag-tool">tool</span>
+                <div class="mb-card-desc">A powerful data manipulation library for Python.</div>
+                <a class="mb-card-link" href="https://pandas.pydata.org/" target="_blank">pandas.pydata.org →</a>
+                <div class="mb-pill-row">
+                    <span class="mb-pill">DataFrames</span>
+                    <span class="mb-pill">Series</span>
+                    <span class="mb-pill">groupby</span>
+                    <span class="mb-pill">merge</span>
+                </div>
+            </div>
+            <div class="mb-card span2">   
+                <div class="mb-card-title">Graph Theory</div>
+                <span class="mb-card-tag tag-concept">concept</span>
+                <div class="mb-card-desc">The study of graphs and networks. Fundamental to algorithms and data structures.</div>
+                <div class="mb-code-block">
+                    class Graph:
+                        def __init__(self):
+                            self.adjacency_list = {}
+                        def add_edge(self, u, v):
+                            if u not in self.adjacency_list:
+                                self.adjacency_list[u] = []
+                            if v not in self.adjacency_list:
+                                self.adjacency_list[v] = []
+                            self.adjacency_list[u].append(v)
+                            self.adjacency_list[v].append(u)
+                </div>
+                <div class="mb-pill-row">
+                    <span class="mb-pill">DFS</span>
+                    <span class="mb-pill">BFS</span>
+                    <span class="mb-pill">Dijkstra's Algorithm</span>
+                    <span class="mb-pill">A* Search</span>
+                </div> 
+            </div>
+            <div class="mb-card">
+                <div class="mb-card-title">Hadoop HDFS</div>
+                <span class="mb-card-tag tag-tool">tool</span>
+                <div class="mb-card-desc">A distributed file system for big data storage and processing.</div>
+                <a class="mb-card-link" href="https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html" target="_blank">hadoop.apache.org/docs →</a>
+                <div class="mb-pill-row">
+                    <span class="mb-pill">Distributed Storage</span>
+                    <span class="mb-pill">Fault Tolerance</span>
+                    <span class="mb-pill">MapReduce</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    `,
     
-        leo: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Leo Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">APIs</div></div></div></div>`,
+    leo: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Leo Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">APIs</div></div></div></div>`,
     kaitlyn: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Kaitlyn Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">SQL</div></div></div></div>`
 };
 

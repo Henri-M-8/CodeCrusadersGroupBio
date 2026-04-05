@@ -189,7 +189,7 @@ button:hover { transform: translateY(-3px); }
     overflow: visible; 
     
     /* Ensures it doesn't hug the very top of the screen */
-    margin-top: 350px;
+    margin-top: 20%;
     margin-bottom: 20px;
 }
 
