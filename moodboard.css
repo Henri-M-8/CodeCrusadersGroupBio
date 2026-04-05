@@ -261,3 +261,66 @@
     0 8px 20px rgba(0, 0, 0, 0.4),
     0 0 14px rgba(107, 15, 26, 0.18);
 }
+
+/* This is Leo's moodboard */
+/* Leo's Moodboard */
+
+.leo-board {
+  --leo-card: rgba(10, 25, 47, 0.95);
+  --leo-accent: #64ffda;
+  --leo-text: #e6f1ff;
+  --leo-dim: #a8b2d1;
+}
+
+.leo-board .mb-header {
+  border-bottom: 2px solid rgba(100, 255, 218, 0.6);
+}
+
+.leo-board .mb-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--leo-accent);
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+}
+
+.leo-board .mb-subtitle {
+  color: var(--leo-dim);
+  font-size: 15px;
+}
+
+.leo-board .mb-card {
+  background: var(--leo-card);
+  border-top: 4px solid var(--leo-accent);
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.45),
+    0 0 12px rgba(100, 255, 218, 0.15);
+}
+
+.leo-board .mb-card-title {
+  color: var(--leo-text);
+}
+
+.leo-board .mb-card-desc {
+  color: var(--leo-dim);
+}
+
+.leo-board .mb-quote {
+  border-left: 3px solid var(--leo-accent);
+  color: var(--leo-text);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.leo-board .mb-pill {
+  border: 1px solid rgba(100, 255, 218, 0.4);
+  color: var(--leo-text);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.leo-board .mb-photo {
+  border: 2px solid rgba(100, 255, 218, 0.45);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.4),
+    0 0 14px rgba(100, 255, 218, 0.18);
+}
