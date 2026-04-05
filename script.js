@@ -174,7 +174,61 @@ const moodboards = {
     </div>
     `,
     
-    leo: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Leo Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">APIs</div></div></div></div>`,
+    leo: `
+    <div class="mb-root leo-board">
+
+        <div class="mb-header">
+            <div class="mb-title">Leo Moodboard</div>
+            <div class="mb-subtitle">Clean • Technical • Backend Energy</div>
+        </div>
+
+        <div class="mb-grid">
+
+            <div class="mb-card">
+                <img src="img/leo1.jpg" class="mb-photo">
+                <div class="mb-card-title">APIs & Architecture</div>
+                <div class="mb-card-desc">
+                    Structured systems, clean endpoints, and efficient backend logic.
+                </div>
+            </div>
+
+            <div class="mb-card">
+                <img src="img/leo2.jpg" class="mb-photo">
+                <div class="mb-card-title">Dark Tech Aesthetic</div>
+                <div class="mb-card-desc">
+                    Deep blues, neon accents, and a futuristic developer vibe.
+                </div>
+            </div>
+
+            <div class="mb-card">
+                <img src="img/leo3.jpg" class="mb-photo">
+                <div class="mb-card-title">Focus Mode</div>
+                <div class="mb-card-desc">
+                    Minimal clutter, maximum clarity — the ideal coding environment.
+                </div>
+            </div>
+
+            <div class="mb-card span2">
+                <div class="mb-card-title">Quote</div>
+                <div class="mb-quote">
+                    “Backend is the invisible engine — if it runs smoothly, nobody notices.”
+                </div>
+            </div>
+
+            <div class="mb-card">
+                <div class="mb-card-title">Tech Stack</div>
+                <div class="mb-pill-row">
+                    <div class="mb-pill">Node.js</div>
+                    <div class="mb-pill">Express</div>
+                    <div class="mb-pill">FastAPI</div>
+                    <div class="mb-pill">SQL</div>
+                    <div class="mb-pill">Prisma</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    `,
     
     kaitlyn: 
     `<div class="mb-root kaitlyn-board">
