@@ -175,36 +175,50 @@ const moodboards = {
     `,
     
     leo: `<div class="mb-root"><div class="mb-header"><div class="mb-title">Leo Moodboard</div></div><div class="mb-grid"><div class="mb-card"><div class="mb-card-title">APIs</div></div></div></div>`,
+    
     kaitlyn: 
-    `<div class="mb-root">
+    `<div class="mb-root kaitlyn-board">
     <div class="mb-header">
       <div class="mb-title">Kaitlyn Moodboard<span class="mb-cursor"></span></div>
       <div class="mb-subtitle"># inspirations in computer science — people · ideas · visuals</div>
     </div>
-
     <div class="mb-grid">
       <div class="mb-card">
         <span class="mb-card-tag tag-figure">figure</span>
         <img src="img/ada.jpg" alt="Ada Lovelace" class="mb-photo">
         <div class="mb-card-title">Ada Lovelace</div>
         <div class="mb-card-desc">
-          A pioneer of computing and the first person to recognize that machines could do more than just calculations. One of my inspirations for her great inteligence, and her vision to change the world all while also being a baddie.
+          A pioneer of computing and the first person to recognize that machines could do more than just calculations. One of my inspirations for her great intelligence, and her vision to change the world all while also being a baddie.
         </div>
         <div class="mb-quote">"The Analytical Engine weaves algebraic patterns."</div>
       </div>
-
       <div class="mb-card">
         <span class="mb-card-tag tag-figure">figure</span>
         <img src="img/vector2.jpg" alt="Vector" class="mb-photo">
         <div class="mb-card-title">Vector</div>
         <div class="mb-card-desc">
-          Vector reminds me to keep moving forward and never give up with both direction and magnitude OH-YEAH!
+          Vector reminds me to keep moving forward and never give up with both direction and magnitude and reminds me of the importance that vectors have in AI and machine learning and how they are used to represent data and make predictions.
+        </div>
+        <div class="mb-quote">
+          "VECTOR!! That's me. 'Cause I'm committing crimes with both direction and magnitude. OH YEAH!!!!!!!!!!!"
         </div>
       </div>
-
+      <div class="mb-card">
+        <span class="mb-card-tag tag-tool">tool</span>
+        <div class="mb-card-title">Open MPI</div>
+        <div class="mb-card-desc">
+          A parallel computing tool that lets multiple processes communicate and work together across multiple processers. I like it because it connects to my interest in optimisation and it shows how powerfull parallel computing can be for optimising large scale computations.
+        </div>
+        <a class="mb-card-link" href="https://www.open-mpi.org/" target="_blank">Open MPI →</a>
+        <div class="mb-pill-row">
+          <span class="mb-pill">parallel computing</span>
+          <span class="mb-pill">distributed systems</span>
+          <span class="mb-pill">message passing</span>
+        </div>
+      </div>
       <div class="mb-card span2">
         <span class="mb-card-tag tag-concept">concept</span>
-        <div class="mb-card-title">My Growing Moodboard</div>
+        <div class="mb-card-title">Growing Moodboard</div>
         <div class="mb-card-desc">
         </div>
         <div class="mb-pill-row">

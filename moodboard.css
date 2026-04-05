@@ -27,6 +27,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  align-items: start;
 }
 
 .mb-card {
@@ -183,4 +184,80 @@
   margin-bottom: 12px;
   border: 2px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+*/ this is for kaitlyns moood board */
+/* Kaitlyn's moodboard */
+.kaitlyn-board {
+  --k-card: rgba(20, 6, 8, 0.95);
+  --k-accent: #6b0f1a;
+  --k-text: #f8f5f5;
+  --k-dim: #d7caca;
+}
+
+.kaitlyn-board .mb-header {
+  border-bottom: 2px solid rgba(107, 15, 26, 0.7);
+}
+
+.kaitlyn-board .mb-title {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(107, 15, 26, 0.45);
+}
+
+.kaitlyn-board .mb-subtitle {
+  color: #e7dede;
+  font-size: 16px;
+}
+
+.kaitlyn-board .mb-card {
+  background: var(--k-card);
+  border-top: 4px solid var(--k-accent);
+  border: 1px solid rgba(107, 15, 26, 0.45);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.45),
+    0 0 12px rgba(107, 15, 26, 0.18);
+}
+
+.kaitlyn-board .mb-card-title {
+  color: var(--k-text);
+}
+
+.kaitlyn-board .mb-card-desc {
+  color: var(--k-dim);
+}
+
+.kaitlyn-board .mb-quote {
+  border-left: 3px solid var(--k-accent);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.kaitlyn-board .tag-figure {
+  background: rgba(107, 15, 26, 0.2);
+  color: #f3d6da;
+}
+
+.kaitlyn-board .tag-concept {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.kaitlyn-board .mb-pill {
+  border: 1px solid rgba(107, 15, 26, 0.4);
+  color: #f8f5f5;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.kaitlyn-board .mb-cursor {
+  background: #ffffff;
+}
+
+.kaitlyn-board .mb-photo {
+  border: 2px solid rgba(107, 15, 26, 0.45);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.4),
+    0 0 14px rgba(107, 15, 26, 0.18);
 }
