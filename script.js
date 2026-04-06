@@ -273,13 +273,11 @@ const moodboards = {
         very direct control over their systems. Also the rabbit hole with Bash is so deep and you can do so much with it alone.
         Linux Mint is my favorite distro because it feels beginner-friendly with a customizable GUI.
         This meme is funny to me because this happened to one of my rasberry pi projects when I was starting to learn programming because I didnt pwd before I ran rm -rf ./* and deleted 
-        my whole project folder because I thought I was in a different directory. I did not have a backup so thats a reminder to always use a remote repository for version control and backup.
+        my whole project folder because I thought I was in a different directory. 
       </div>
       <div class="mb-pill-row">
         <span class="mb-pill">linux mint</span>
         <span class="mb-pill">command line</span>
-        <span class="mb-pill">open source</span>
-        <span class="mb-pill">problem solving</span>
       </div>
     </div>
       <div class="mb-card">
