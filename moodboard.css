@@ -319,8 +319,5 @@
 }
 
 .leo-board .mb-photo {
-  border: 2px solid rgba(100, 255, 218, 0.45);
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.4),
-    0 0 14px rgba(100, 255, 218, 0.18);
+  height: 150px;   /* overrides the base height */
 }
