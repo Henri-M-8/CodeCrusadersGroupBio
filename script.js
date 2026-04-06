@@ -185,7 +185,7 @@ const moodboards = {
         <div class="mb-grid">
     
             <div class="mb-card">
-                <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9PRBo2J1fR-g77cQ0n0ZRL_9MVRXbsJIC-_ZSJSspjT6Jh2W_v-aSsuRvPC_gU9UDWBaiez_MXHeW4B6p4ytj8OgCWR0M35w7TCj0szM2mxFEnM_0O_3qbZB1jOcqhbItUBd_ulQdGQ1D30s5idrqBdKf?key=Q0b8uweFPev9rjmSlEfrKA" class="mb-photo">
+                <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*NpBW4MNJMgPSRO_T0krMuA.jpeg" class="mb-photo">
                 <div class="mb-card-title">APIs & Architecture</div>
                 <div class="mb-card-desc">
                     Structured systems, clean endpoints, and efficient backend logic.
@@ -193,7 +193,7 @@ const moodboards = {
             </div>
     
             <div class="mb-card">
-                <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*NpBW4MNJMgPSRO_T0krMuA.jpeg" class="mb-photo">
+                <img src="https://wallpapercave.com/wp/wp9142483.jpg" class="mb-photo">
                 <div class="mb-card-title">Dark Tech Aesthetic</div>
                 <div class="mb-card-desc">
                     Deep blues, neon accents, and a futuristic developer vibe.
@@ -201,7 +201,7 @@ const moodboards = {
             </div>
     
             <div class="mb-card">
-                <img src="https://wallpapercave.com/wp/wp9142483.jpg" class="mb-photo">
+                <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9PRBo2J1fR-g77cQ0n0ZRL_9MVRXbsJIC-_ZSJSspjT6Jh2W_v-aSsuRvPC_gU9UDWBaiez_MXHeW4B6p4ytj8OgCWR0M35w7TCj0szM2mxFEnM_0O_3qbZB1jOcqhbItUBd_ulQdGQ1D30s5idrqBdKf?key=Q0b8uweFPev9rjmSlEfrKA" class="mb-photo">
                 <div class="mb-card-title">Focus Mode</div>
                 <div class="mb-card-desc">
                     Minimal clutter, maximum clarity — the ideal coding environment.
@@ -233,8 +233,8 @@ const moodboards = {
     kaitlyn: 
     `<div class="mb-root kaitlyn-board">
     <div class="mb-header">
-      <div class="mb-title">Kaitlyn Moodboard<span class="mb-cursor"></span></div>
-      <div class="mb-subtitle"># inspirations in computer science — people · ideas · visuals</div>
+      <div class="mb-title">Kaitlyn Moodboard 🦇</div>
+      <div class="mb-subtitle">CS Inspirations and other totally tubular things</div>
     </div>
     <div class="mb-grid">
       <div class="mb-card">
@@ -242,7 +242,7 @@ const moodboards = {
         <img src="img/ada.jpg" alt="Ada Lovelace" class="mb-photo">
         <div class="mb-card-title">Ada Lovelace</div>
         <div class="mb-card-desc">
-          A pioneer of computing and the first person to recognize that machines could do more than just calculations. One of my inspirations for her great intelligence, and her vision to change the world all while also being a baddie.
+          A pioneer of computing she recognized that machines could do more than simple calculations and could follow symbolic instructions to perform complex tasks. She also imagined a future in which computers might create music or work with symbols, which makes her ideas feel very ahead of her time. She inspires me because of her intelligence, creativity, and persistence because she pushed forward despite living in a patriarchal society that limited women’s access to science and failed to fully value their contributions.
         </div>
         <div class="mb-quote">"The Analytical Engine weaves algebraic patterns."</div>
       </div>
@@ -272,14 +272,15 @@ const moodboards = {
       </div>
       <div class="mb-card span2">
         <span class="mb-card-tag tag-concept">concept</span>
-        <div class="mb-card-title">Growing Moodboard</div>
+        <div class="mb-card-title">Concepts: Machine Learning & Data Quality</div>
         <div class="mb-card-desc">
+          Machine learning interests me because it allows computers to observe patterns in data and use those patterns to make predictions. One thing that is especially important is data quality, because a model is only as good as the data it learns from. A major issue in AI is overfitting, where a model learns the training data too closely instead of learning patterns that generalize well to new data. Ignoring data quality ends up leading to a lot hallucinations and inaccurate predictions, which is a big problem in AI.
         </div>
         <div class="mb-pill-row">
-          <span class="mb-pill">Ada Lovelace</span>
-          <span class="mb-pill">Vector</span>
-          <span class="mb-pill">database design</span>
-          <span class="mb-pill">more later</span>
+          <span class="mb-pill">machine learning</span>
+          <span class="mb-pill">data quality</span>
+          <span class="mb-pill">overfitting</span>
+          <span class="mb-pill">prediction</span>
         </div>
       </div>
     </div>
