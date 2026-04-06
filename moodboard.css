@@ -259,6 +259,11 @@
     0 0 14px rgba(107, 15, 26, 0.18);
 }
 
+.tux-photo {
+  object-fit: contain;
+  background: #fff;
+}
+
 /* This is Leo's moodboard */
 /* Leo's Moodboard */
 

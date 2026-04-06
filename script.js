@@ -242,7 +242,10 @@ const moodboards = {
         <img src="img/ada.jpg" alt="Ada Lovelace" class="mb-photo">
         <div class="mb-card-title">Ada Lovelace</div>
         <div class="mb-card-desc">
-          A pioneer of computing she recognized that machines could do more than simple calculations and could follow symbolic instructions to perform complex tasks. She also imagined a future in which computers might create music or work with symbols, which makes her ideas feel very ahead of her time. She inspires me because of her intelligence, creativity, and persistence because she pushed forward despite living in a patriarchal society that limited women’s access to science and failed to fully value their contributions.
+          A pioneer of computing she recognized that machines could do more than simple calculations and could follow symbolic instructions to perform complex tasks. 
+          She also imagined a future in which computers might create music or work with symbols, which makes her ideas feel very ahead of her time. She inspires me because of her 
+          intelligence, creativity, and persistence because she pushed forward despite living in a patriarchal society that limited women’s access to science and failed to fully 
+          value their contributions.
         </div>
         <div class="mb-quote">"The Analytical Engine weaves algebraic patterns."</div>
       </div>
@@ -251,17 +254,40 @@ const moodboards = {
         <img src="img/vector2.jpg" alt="Vector" class="mb-photo">
         <div class="mb-card-title">Vector</div>
         <div class="mb-card-desc">
-          Vector reminds me to keep moving forward and never give up with both direction and magnitude and reminds me of the importance that vectors have in AI and machine learning and how they are used to represent data and make predictions.
+          Vector reminds me to keep moving forward and never give up with both direction and magnitude and reminds me of the importance that vectors have in AI and machine learning 
+          and how they are used to represent data and make predictions.
         </div>
         <div class="mb-quote">
           "VECTOR!! That's me. 'Cause I'm committing crimes with both direction and magnitude. OH YEAH!!!!!!!!!!!"
         </div>
+        <div class="mb-card-desc">
+          I also think this the method that non software engineers use to write documentation.
+        </div>
       </div>
+      <div class="mb-card">
+        <span class="mb-card-tag tag-tool">tool</span>
+        <img src="img/tux.jpg" alt="Tux meme" class="mb-photo tux-photo">
+        <div class="mb-card-title">Linux</div>
+        <div class="mb-card-desc">
+        Linux is an operating system that interests me because it is powerful, flexible, and gives users
+        very direct control over their systems. Also the rabbit hole with Bash is so deep and you can do so much with it alone.
+        Linux Mint is my favorite distro because it feels beginner-friendly with a customizable GUI.
+        This meme is funny to me because this happened to one of my rasberry pi projects when I was starting to learn programming because I didnt pwd before I ran rm -rf ./* and deleted 
+        my whole project folder because I thought I was in a different directory. I did not have a backup so thats a reminder to always use a remote repository for version control and backup.
+      </div>
+      <div class="mb-pill-row">
+        <span class="mb-pill">linux mint</span>
+        <span class="mb-pill">command line</span>
+        <span class="mb-pill">open source</span>
+        <span class="mb-pill">problem solving</span>
+      </div>
+    </div>
       <div class="mb-card">
         <span class="mb-card-tag tag-tool">tool</span>
         <div class="mb-card-title">Open MPI</div>
         <div class="mb-card-desc">
-          A parallel computing tool that lets multiple processes communicate and work together across multiple processers. I like it because it connects to my interest in optimisation and it shows how powerfull parallel computing can be for optimising large scale computations.
+          A parallel computing tool that lets multiple processes communicate and work together across multiple processers. I like it because it connects to my interest in
+           optimisation and it shows how powerfull parallel computing can be for optimising large scale computations.
         </div>
         <a class="mb-card-link" href="https://www.open-mpi.org/" target="_blank">Open MPI →</a>
         <div class="mb-pill-row">
@@ -274,7 +300,10 @@ const moodboards = {
         <span class="mb-card-tag tag-concept">concept</span>
         <div class="mb-card-title">Concepts: Machine Learning & Data Quality</div>
         <div class="mb-card-desc">
-          Machine learning interests me because it allows computers to observe patterns in data and use those patterns to make predictions. One thing that is especially important is data quality, because a model is only as good as the data it learns from. A major issue in AI is overfitting, where a model learns the training data too closely instead of learning patterns that generalize well to new data. Ignoring data quality ends up leading to a lot hallucinations and inaccurate predictions, which is a big problem in AI.
+          Machine learning interests me because it allows computers to observe patterns in data and use those patterns to make predictions. One thing that is especially important is
+           data quality, because a model is only as good as the data it learns from. A major issue in AI is overfitting, where a model learns the training data too closely 
+           instead of learning patterns that generalize well to new data. Ignoring data quality ends up leading to a lot of hallucinations and inaccurate predictions, which is a big problem 
+           in AI.
         </div>
         <div class="mb-pill-row">
           <span class="mb-pill">machine learning</span>
