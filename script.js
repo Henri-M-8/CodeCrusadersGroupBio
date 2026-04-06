@@ -174,47 +174,47 @@ const moodboards = {
     </div>
     `,
     
-    leo: `
+        leo: `
     <div class="mb-root leo-board">
-
+    
         <div class="mb-header">
             <div class="mb-title">Leo Moodboard</div>
             <div class="mb-subtitle">Clean • Technical • Backend Energy</div>
         </div>
-
+    
         <div class="mb-grid">
-
+    
             <div class="mb-card">
-                <img src="img/leo1.jpg" class="mb-photo">
+                <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9PRBo2J1fR-g77cQ0n0ZRL_9MVRXbsJIC-_ZSJSspjT6Jh2W_v-aSsuRvPC_gU9UDWBaiez_MXHeW4B6p4ytj8OgCWR0M35w7TCj0szM2mxFEnM_0O_3qbZB1jOcqhbItUBd_ulQdGQ1D30s5idrqBdKf?key=Q0b8uweFPev9rjmSlEfrKA" class="mb-photo">
                 <div class="mb-card-title">APIs & Architecture</div>
                 <div class="mb-card-desc">
                     Structured systems, clean endpoints, and efficient backend logic.
                 </div>
             </div>
-
+    
             <div class="mb-card">
-                <img src="img/leo2.jpg" class="mb-photo">
+                <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*NpBW4MNJMgPSRO_T0krMuA.jpeg" class="mb-photo">
                 <div class="mb-card-title">Dark Tech Aesthetic</div>
                 <div class="mb-card-desc">
                     Deep blues, neon accents, and a futuristic developer vibe.
                 </div>
             </div>
-
+    
             <div class="mb-card">
-                <img src="img/leo3.jpg" class="mb-photo">
+                <img src="https://wallpapercave.com/wp/wp9142483.jpg" class="mb-photo">
                 <div class="mb-card-title">Focus Mode</div>
                 <div class="mb-card-desc">
                     Minimal clutter, maximum clarity — the ideal coding environment.
                 </div>
             </div>
-
+    
             <div class="mb-card span2">
                 <div class="mb-card-title">Quote</div>
                 <div class="mb-quote">
                     “Backend is the invisible engine — if it runs smoothly, nobody notices.”
                 </div>
             </div>
-
+    
             <div class="mb-card">
                 <div class="mb-card-title">Tech Stack</div>
                 <div class="mb-pill-row">
@@ -225,11 +225,11 @@ const moodboards = {
                     <div class="mb-pill">Prisma</div>
                 </div>
             </div>
-
+    
         </div>
     </div>
     `,
-    
+        
     kaitlyn: 
     `<div class="mb-root kaitlyn-board">
     <div class="mb-header">
